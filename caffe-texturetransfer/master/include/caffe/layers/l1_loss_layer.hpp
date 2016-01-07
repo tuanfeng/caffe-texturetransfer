@@ -8,6 +8,10 @@
 #include "caffe/proto/caffe.pb.h"
 
 #include "caffe/layers/loss_layer.hpp"
+#include "caffe/layers/power_layer.hpp"
+
+#include "caffe/layers/conv_layer.hpp"
+#include "caffe/layers/eltwise_layer.hpp"
 
 namespace caffe {
 
@@ -17,8 +21,8 @@ namespace caffe {
  */
 
 //Forward declare
-template <typename Dtype> class ConvolutionLayer;
-template <typename Dtype> class EltwiseLayer;
+//template <typename Dtype> class ConvolutionLayer;
+//template <typename Dtype> class EltwiseLayer;
 
 template <typename Dtype>
 class L1LossLayer : public LossLayer<Dtype> {
